@@ -1,0 +1,21 @@
+module MemoriaInstrucao(addr, clk, instruction);
+input [4:0] addr;
+input clk;
+output [31:0] instruction;
+
+reg [31:0] Mem [0:31];
+
+initial 
+begin
+  
+// Coloque o seu programa nas posições de memória
+
+  Mem[ 5'h0] = 16'hf000;
+  Mem[ 5'h1] = 16'h0;
+//	...
+    
+end
+
+assign instruction = Mem[addr];
+
+endmodule

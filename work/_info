@@ -1,0 +1,224 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vALUControl
+Z1 !s100 AiW_eVOfkPDOUV[dDI4GS0
+Z2 I4i2XN0L^_jRaKcX42EI=53
+Z3 VDZ@41lIgEd:`e9jHH=XBm1
+Z4 dC:\Users\Aluno\Desktop\DataPathWControl
+Z5 w1571423760
+Z6 8C:/Users/Aluno/Desktop/DataPathWControl/ALUControl.v
+Z7 FC:/Users/Aluno/Desktop/DataPathWControl/ALUControl.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/DataPathWControl/ALUControl.v|
+Z10 o-work work -O0
+Z11 n@a@l@u@control
+Z12 !s108 1571425452.150000
+Z13 !s107 C:/Users/Aluno/Desktop/DataPathWControl/ALUControl.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vBancoRegistradores
+Z14 !s100 L0V60=Fkf_<adC4KR9G7T1
+Z15 I5G^Ge;NGD<XF>UAH;KJ073
+Z16 Vl1B7PkgAzzS2b2kjaazW@1
+R4
+Z17 w1571407007
+Z18 8C:/Users/Aluno/Desktop/DataPathWControl/BancoRegistradores.v
+Z19 FC:/Users/Aluno/Desktop/DataPathWControl/BancoRegistradores.v
+L0 1
+R8
+r1
+31
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/DataPathWControl/BancoRegistradores.v|
+R10
+Z21 n@banco@registradores
+Z22 !s108 1571425452.354000
+Z23 !s107 C:/Users/Aluno/Desktop/DataPathWControl/BancoRegistradores.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDataPath
+Z24 !s100 L:XHWZV^[kT1149lDi4FA0
+Z25 If=b7TM53P1?59Fa^i6kT]1
+Z26 VgaB^_eO<=HGZg>H6VUI203
+R4
+Z27 w1571423427
+Z28 8C:\Users\Aluno\Desktop\DataPathWControl\DataPath.v
+Z29 FC:\Users\Aluno\Desktop\DataPathWControl\DataPath.v
+L0 1
+R8
+r1
+31
+Z30 !s90 -reportprogress|300|-work|work|C:\Users\Aluno\Desktop\DataPathWControl\DataPath.v|
+R10
+Z31 n@data@path
+Z32 !s108 1571425452.619000
+Z33 !s107 C:\Users\Aluno\Desktop\DataPathWControl\DataPath.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDeslocador
+Z34 I>[22jOd2ekIKm@EfEE:162
+Z35 Vbb3Jf`WXXVDEoZ=F=MJDg2
+R4
+Z36 w1571413677
+Z37 8C:/Users/Aluno/Desktop/DataPathWControl/DeslocadorMedio.v
+Z38 FC:/Users/Aluno/Desktop/DataPathWControl/DeslocadorMedio.v
+L0 1
+R8
+r1
+31
+R10
+Z39 n@deslocador
+Z40 !s100 R>9IHY]Y>MT=Gza[ca:mJ0
+Z41 !s108 1571425452.900000
+Z42 !s107 C:/Users/Aluno/Desktop/DataPathWControl/DeslocadorMedio.v|
+Z43 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/DataPathWControl/DeslocadorMedio.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMemoriaDados
+Z44 !s100 [J>EG6K^S53?M=`m_?a<;3
+Z45 Ib>Db<aJOm;hDKkEQzHdfY1
+Z46 VL1OR]kZnZ416ehKNO3I=K0
+R4
+Z47 w1571424970
+Z48 8C:/Users/Aluno/Desktop/DataPathWControl/MemoriaDados.v
+Z49 FC:/Users/Aluno/Desktop/DataPathWControl/MemoriaDados.v
+L0 1
+R8
+r1
+31
+Z50 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/DataPathWControl/MemoriaDados.v|
+R10
+Z51 n@memoria@dados
+Z52 !s108 1571425453.135000
+Z53 !s107 C:/Users/Aluno/Desktop/DataPathWControl/MemoriaDados.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMemoriaInstrucao
+Z54 !s100 i6FbGHf^n2Tkk8l@2kb>V2
+Z55 Ii[?h:08<Je@`PWNz4`lHa3
+Z56 V0=HSN=:3Y=D<gN@2WO7Pb2
+R4
+Z57 w1571424579
+Z58 8C:/Users/Aluno/Desktop/DataPathWControl/MemoriaInstrucao.v
+Z59 FC:/Users/Aluno/Desktop/DataPathWControl/MemoriaInstrucao.v
+L0 1
+R8
+r1
+31
+Z60 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/DataPathWControl/MemoriaInstrucao.v|
+R10
+Z61 n@memoria@instrucao
+Z62 !s108 1571425453.307000
+Z63 !s107 C:/Users/Aluno/Desktop/DataPathWControl/MemoriaInstrucao.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMIPSALU
+Z64 !s100 nTTWG;>;hS;0:VV0MZP??0
+Z65 I3U<F=KYdLP<oHh>ZJXMhm2
+Z66 V[:6KmS`l73[Ecd<Hdb>zQ0
+R4
+Z67 w1571279437
+Z68 8C:/Users/Aluno/Desktop/DataPathWControl/ALU.v
+Z69 FC:/Users/Aluno/Desktop/DataPathWControl/ALU.v
+L0 1
+R8
+r1
+31
+Z70 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/DataPathWControl/ALU.v|
+R10
+Z71 n@m@i@p@s@a@l@u
+Z72 !s108 1571425451.994000
+Z73 !s107 C:/Users/Aluno/Desktop/DataPathWControl/ALU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMUX21
+Z74 !s100 E52TeoUGH2TB56[b0EnSC3
+Z75 IN2^h[m6N1;1<QX2;CTRIe2
+Z76 Vb0QGl15e@R>CXR8:MPgHd2
+R4
+Z77 w1569611327
+Z78 8C:/Users/Aluno/Desktop/DataPathWControl/MUX21.v
+Z79 FC:/Users/Aluno/Desktop/DataPathWControl/MUX21.v
+L0 1
+R8
+r1
+31
+Z80 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/DataPathWControl/MUX21.v|
+R10
+Z81 n@m@u@x21
+Z82 !s108 1571425453.510000
+Z83 !s107 C:/Users/Aluno/Desktop/DataPathWControl/MUX21.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMUXReg
+Z84 !s100 45Ch:79E1@zH18XS>iY@^1
+Z85 IjDFa9_ULh0J3[T0jK8JH30
+Z86 Vgf_EW;`bMgE9fooUA8[8Z1
+R4
+Z87 w1571407763
+Z88 8C:/Users/Aluno/Desktop/DataPathWControl/MUXReg.v
+Z89 FC:/Users/Aluno/Desktop/DataPathWControl/MUXReg.v
+L0 1
+R8
+r1
+31
+Z90 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/DataPathWControl/MUXReg.v|
+R10
+Z91 n@m@u@x@reg
+Z92 !s108 1571425453.729000
+Z93 !s107 C:/Users/Aluno/Desktop/DataPathWControl/MUXReg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vPC
+Z94 !s100 :bfCd3Wk5C;6CiG0z6miG1
+Z95 I<@YozkanVX7B>Y`GU;iUZ0
+Z96 VkkA0c4;b;8Ddo>TGdS7>b3
+R4
+Z97 w1569610044
+Z98 8C:/Users/Aluno/Desktop/DataPathWControl/PC.v
+Z99 FC:/Users/Aluno/Desktop/DataPathWControl/PC.v
+L0 1
+R8
+r1
+31
+Z100 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/DataPathWControl/PC.v|
+R10
+n@p@c
+!i10b 1
+!s85 0
+Z101 !s108 1571425453.885000
+Z102 !s107 C:/Users/Aluno/Desktop/DataPathWControl/PC.v|
+!s101 -O0
+vsomador
+!i10b 1
+Z103 !s100 Y=GakIm0hZKMmlV_TnBFS0
+Z104 Ia7f24gIXRl?PY<_1]U<991
+Z105 VZML5EOJ:BK>GbGUHm4Mnb0
+R4
+Z106 w1569612095
+Z107 8C:/Users/Aluno/Desktop/DataPathWControl/Somador.v
+Z108 FC:/Users/Aluno/Desktop/DataPathWControl/Somador.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1571425454.057000
+!s107 C:/Users/Aluno/Desktop/DataPathWControl/Somador.v|
+Z109 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/DataPathWControl/Somador.v|
+!s101 -O0
+R10
