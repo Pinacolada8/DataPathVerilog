@@ -7,13 +7,10 @@ reg [31:0] Mem [0:31];
 
 initial 
 begin
-  
-// Coloque o seu programa nas posições de memória
-
-  Mem[ 5'h0] = 16'hf000;
-  Mem[ 5'h1] = 16'h0;
-//	...
-    
+  Mem[5'h0] = 32'hf000;
+  Mem[5'h1] = 32'h0f00;
+  Mem[5'h2] = 32'h00f0;
+  Mem[5'h3] = 32'h000f;  
 end
 
 assign instruction = Mem[addr];

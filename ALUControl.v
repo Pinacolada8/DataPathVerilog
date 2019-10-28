@@ -6,7 +6,7 @@ module ALUControl (ALUOp, FuncCode, ALUCt1);
   always@(FuncCode or ALUOp)
   case(ALUOp)
     0: ALUCt1 <= 2;//lw e sw
-    1: ALUCt1 <= 6;//branch
+    1: ALUCt1 <= 6;//beq
     2: case(FuncCode)
           32:ALUCt1 <= 2; //soma
           34:ALUCt1 <= 6; //subtrai

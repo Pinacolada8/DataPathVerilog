@@ -4,8 +4,8 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
   output reg RegDst, Jump, Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite;
   
   
-  always@(OpCode)
-  case(OpCode)
+  always@(FuncCode or ALUOp)
+  case(ALUOp)
     0:begin//R-format
       RegDst <= 1;
       Jump <= 0;

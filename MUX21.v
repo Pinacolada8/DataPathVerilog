@@ -3,7 +3,7 @@ module MUX21(A, B, controle, S);
   input controle;
   output reg[31:0] S;
   
-  always@(controle)
+  always@(A or B or controle)
     begin
       case(controle)
         0: S <= A;

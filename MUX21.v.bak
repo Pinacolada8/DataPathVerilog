@@ -1,9 +1,9 @@
-module MUXReg(A, B, controle, S);
-  input[4:0] A, B;
+module MUX21(A, B, controle, S);
+  input[31:0] A, B;
   input controle;
-  output reg[4:0] S;
+  output reg[31:0] S;
   
-  always@(A or B or controle)
+  always@(controle)
     begin
       case(controle)
         0: S <= A;

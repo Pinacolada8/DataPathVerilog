@@ -1,36 +1,34 @@
 module DataPath(input clk, rst);
   wire[31:0] data, endereco, instrucao, saidamuxposbanco, saidaALU, writeData, extendedShifted, ALUres, saidaSomadorPC, data1, data2, jumpAddress, BranchRes;  
-  wire[25:0] enderecoJump;
+  wire[27:0] enderecoJump;
   wire[6:0] enderecoShifted;
   wire[4:0] writeReg;
-  wire[3:0] ALUControl;
-  wire controle, regDst, ALUSrc, zero, MemRead, MemtoReg, regWrite, PCSrc, jump;
+  wire[3:0] ALUControl;//Saida da ALUControl
+  wire[1:0] ALUOp;//Uma das entradas da ALUControl
+  wire RegDst, Jump, Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite, zero;
 
-
-  PC pc(data, clk, rst, endereco);
+  PC pc(data, clk, rst, endereco);//ok
   
-  DeslocadorReduzido(endereco[6:0], 2'b10, enderecoShifted);
+  MemoriaInstrucao instmem(endereco[6:2], clk, instrucao);//ok
   
-  MemoriaInstrucao instmem(enderecoShifted[6:2], clk, instrucao);
+  Somador PCJump(endereco, 32'b100, saidaSomadorPC);//+/-ok retestar
   
-  Somador PCJump(endereco, 32'b10, saidaSomadorPC);
-  
-  DeslocadorMedio(instrucao[25:0], 8'b10, enderecoJump);
-  
-  assign jumpAddress = {enderecoJump, 2'b00};
-  assign jumpAddress[31:28] = saidaSomadorPC[31:28];
+  assign enderecoJump = {instrucao[25:0], 2'b00};//ok
+  assign jumpAddress = {saidaSomadorPC[31:28], enderecoJump};//ok
+   
+  Controle control(instrucao[31:26], RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite, ALUSrc, RegWrite);//ok 
    
   MUXReg muxreg(instrucao[20:16], instrucao[15:11], regDst, writeReg);//Mux 2-1 de 5 bits criado especialmente para essa funcao
   
-  BancoRegistradores(instrucao[25:21], instrucao[20:16], writeReg, writeData, regWrite, data1, data2, clk);
-  
+  BancoRegistradores banco(instrucao[25:21], instrucao[20:16], writeReg, writeData, RegWrite, data1, data2, clk);
+    
   MUX21 muxposbanco(data2, {{16{instrucao[15]}}, instrucao[15:0]}, ALUSrc, saidamuxposbanco);//Extensão de sinal
   
   ALUControl alucontrol(ALUOp, instrucao[5:0], ALUControl);  
   
   ALU alu(ALUControl, data1, saidamuxposbanco, saidaALU, zero);
   
-  MemoriaDados memData(saidaALU, data2, MemRead, clk, ReadData);
+  MemoriaDados memData(saidaALU, data2, MemWrite, MemRead, clk, ReadData);
   
   MUX21 muxposMemData(saidaALU, ReadData, MemtoReg, writeData);
 
@@ -38,7 +36,7 @@ module DataPath(input clk, rst);
    
   Somador branchAdder(saidaSomadorPC, extendedShifted, ALUres);
   
-  MUX21 muxBranch(saidaSomadorPC, ALUres, PCSrc, BranchRes);
+  MUX21 muxBranch(saidaSomadorPC, ALUres, Branch & zero, BranchRes);
   
   MUX21 muxNewPC(BranchRes, jumpAddress, jump, data);
 endmodule
