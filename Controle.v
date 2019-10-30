@@ -28,6 +28,8 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       ALUSrc <= 0;//Don't care
       RegWrite <= 0;
     end
+    3:begin//jal
+    end
     4:begin//beq
       RegDst <= 0;//Don't care
       Jump <= 0;
@@ -38,6 +40,22 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       MemWrite <= 0;
       ALUSrc <= 0;
       RegWrite <= 0;
+    end
+    5:begin//bne
+    end
+    8:begin//addi
+    end
+    9:begin//addiu
+    end
+    10:begin//slti
+    end
+    11:begin//sltiu
+    end
+    12:begin//andi
+    end
+    13:begin//ori
+    end
+    15:begin//lui
     end
     35:begin//LW
       RegDst <= 0;
@@ -50,6 +68,14 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       ALUSrc <= 1;
       RegWrite <= 1;
     end
+    36:begin//lbu
+    end
+    37:begin//lhu
+    end
+    40:begin//Sb
+    end
+    41:begin//sh
+    end
     43:begin//SW
       RegDst <= 0;//Don't care
       Jump <= 0;
@@ -60,6 +86,10 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       MemWrite <= 1;
       ALUSrc <= 1;
       RegWrite <= 0;
+    end
+    48:begin//ll
+    end
+    56:begin//sc
     end
   endcase
 endmodule
