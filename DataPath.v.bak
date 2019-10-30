@@ -1,7 +1,6 @@
 module DataPath(input clk, rst);
   wire[31:0] data, endereco, instrucao, saidamuxposbanco, saidaALU, writeData, extendedShifted, ALUres, saidaSomadorPC, data1, data2, jumpAddress, BranchRes;  
   wire[27:0] enderecoJump;
-  wire[6:0] enderecoShifted;
   wire[4:0] writeReg;
   wire[3:0] ALUControl;//Saida da ALUControl
   wire[1:0] ALUOp;//Uma das entradas da ALUControl

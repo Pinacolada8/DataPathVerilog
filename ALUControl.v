@@ -1,5 +1,5 @@
 module ALUControl (ALUOp, FuncCode, ALUCt1);
-  input[1:0] ALUOp;
+  input[3:0] ALUOp;
   input[5:0] FuncCode;
   output reg[3:0] ALUCt1;
   
@@ -22,5 +22,7 @@ module ALUControl (ALUOp, FuncCode, ALUCt1);
           43:ALUCt1 <= 15; //sltu
          default:ALUCt1 <= 15;
        endcase
+    3: ALUCt1 <= 2;//Addi
+    4: ALUCt1 <= 7;//Slti
   endcase
 endmodule

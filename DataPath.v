@@ -3,7 +3,7 @@ module DataPath(input clk, rst);
   wire[27:0] enderecoJump;
   wire[4:0] writeReg;
   wire[3:0] ALUControl;//Saida da ALUControl
-  wire[1:0] ALUOp;//Uma das entradas da ALUControl
+  wire[3:0] ALUOp;//Uma das entradas da ALUControl
   wire RegDst, Jump, Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite, zero;
 
   PC pc(data, clk, rst, endereco);//ok

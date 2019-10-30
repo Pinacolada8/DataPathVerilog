@@ -1,6 +1,6 @@
 module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite, ALUSrc, RegWrite);
   input[5:0] OpCode;
-  output reg[1:0] ALUOp;
+  output reg[3:0] ALUOp;
   output reg RegDst, Jump, Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite;
   
   
@@ -44,10 +44,28 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
     5:begin//bne
     end
     8:begin//addi
+      RegDst <= 0;
+      Jump <= 0;
+      Branch <= 0;
+      MemRead <= 0;
+      MemtoReg <= 0;
+      ALUOp <= 3;//Verificar
+      MemWrite <= 0;
+      ALUSrc <= 1;
+      RegWrite <= 1;
     end
     9:begin//addiu
     end
     10:begin//slti
+      RegDst <= 0;
+      Jump <= 0;
+      Branch <= 0;
+      MemRead <= 0;
+      MemtoReg <= 0;
+      ALUOp <= 3;//Verificar
+      MemWrite <= 0;
+      ALUSrc <= 1;
+      RegWrite <= 1;
     end
     11:begin//sltiu
     end
