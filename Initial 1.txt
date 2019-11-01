@@ -28,29 +28,18 @@ begin
   Mem[5'h8] = 32'h0C00000f;//jal 0xf
 end
 
-initial 
-begin
-  Mem[5'h0] = 32'h22318003;//addi s1 s1 0x8003
-  Mem[5'h1] = 32'h26528800;//addiu s2 s2 0x8800
-  Mem[5'h2] = 32'h02329821;//addu s3 s1 s2
-  Mem[5'h3] = 32'h0251a023;//subu s4 s2 s1
-  Mem[5'h4] = 32'h0271a82a;//slt s5 s3 s1
-  Mem[5'h5] = 32'h0271b02b;//sltu s6 s3 s1
-end
-
 Restante:
-addu
-jr
-lbu
-lhu
-ll
+jr*
+lbu*
+lhu*
+ll*
 slt
 sltu
-sll
-srl
-sb
-sc
-sh
+sll*
+srl*
+sb*
+sc*
+sh*
 subu
 
 
