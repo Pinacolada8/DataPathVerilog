@@ -13,6 +13,7 @@ module ALU(ALUctl, A, B, ALUOut, Zero);
       2:ALUOut <= A + B;//SOMA
       6:ALUOut <= A - B;//SUBTRACAO
       7:ALUOut<= A < B ? 1:0;//SET ON LESS THAN
+      11:ALUOut<= B * 65536;//Transforma os 16Bits menos significativos nos mais significativos "lui"
       12:ALUOut <= ~(A | B);//NOR
       default: ALUOut <= 0;
     endcase

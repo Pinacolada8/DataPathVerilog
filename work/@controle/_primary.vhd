@@ -8,9 +8,13 @@ entity Controle is
         Branch          : out    vl_logic;
         MemRead         : out    vl_logic;
         MemtoReg        : out    vl_logic;
-        ALUOp           : out    vl_logic_vector(1 downto 0);
+        ALUOp           : out    vl_logic_vector(3 downto 0);
         MemWrite        : out    vl_logic;
         ALUSrc          : out    vl_logic;
-        RegWrite        : out    vl_logic
+        RegWrite        : out    vl_logic;
+        selectRaWire    : out    vl_logic;
+        zeroImm         : out    vl_logic;
+        extendType      : out    vl_logic;
+        bneSelect       : out    vl_logic
     );
 end Controle;

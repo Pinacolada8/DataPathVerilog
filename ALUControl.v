@@ -24,5 +24,8 @@ module ALUControl (ALUOp, FuncCode, ALUCt1);
        endcase
     3: ALUCt1 <= 2;//Addi
     4: ALUCt1 <= 7;//Slti
+    5: ALUCt1 <= 0; //andi
+    6: ALUCt1 <= 1; //ori
+    7: ALUCt1 <= 11; //lui
   endcase
 endmodule
