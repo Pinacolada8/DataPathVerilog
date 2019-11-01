@@ -12,9 +12,9 @@ module ALUControl (ALUOp, FuncCode, ALUCt1);
           2:ALUCt1 <= 15;//srl
           8:ALUCt1 <= 15;//jump register
           32:ALUCt1 <= 2; //soma
-          33:ALUCt1 <= 15;//soma unsigned
+          33:ALUCt1 <= 2;//soma unsigned
           34:ALUCt1 <= 6; //subtrai
-          35:ALUCt1 <= 15; //subtract unsigned
+          35:ALUCt1 <= 6; //subtract unsigned
           36:ALUCt1 <= 0; //and
           37:ALUCt1 <= 1; //or
           39:ALUCt1 <= 12; //nor

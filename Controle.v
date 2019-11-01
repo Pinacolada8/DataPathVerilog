@@ -19,7 +19,7 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       selectRaWire <= 0;
       zeroImm <= 0;
       extendType <= 1;
-      bneSelect <= 0; //Dont Matter
+      bneSelect <= 0; //Dont care
     end 
     2:begin//Jump
       RegDst <= 0;//Don't care
@@ -34,7 +34,7 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       selectRaWire <= 0;
       zeroImm <= 0;
       extendType <= 1;
-      bneSelect <= 0; //Dont Matter
+      bneSelect <= 0; //Dont care
     end
     3:begin//jal
       RegDst <= 0;
@@ -49,7 +49,7 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       selectRaWire <= 1;
       zeroImm <= 1;
       extendType <= 1;
-      bneSelect <= 0; //Dont Matter
+      bneSelect <= 0; //Dont care
     end
     4:begin//beq
       RegDst <= 0;//Don't care
@@ -87,16 +87,29 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       Branch <= 0;
       MemRead <= 0;
       MemtoReg <= 0;
-      ALUOp <= 3;//Verificar
+      ALUOp <= 3;
       MemWrite <= 0;
       ALUSrc <= 1;
       RegWrite <= 1;
       selectRaWire <= 0;
       zeroImm <= 0;
       extendType <= 1;
-      bneSelect <= 0; //Dont Matter
+      bneSelect <= 0; //Dont care
     end
-    9:begin//addiu
+    9:begin//addiu  TESTAR*********
+      RegDst <= 0;
+      Jump <= 0;
+      Branch <= 0;
+      MemRead <= 0;
+      MemtoReg <= 0;
+      ALUOp <= 3;
+      MemWrite <= 0;
+      ALUSrc <= 1;
+      RegWrite <= 1;
+      selectRaWire <= 0;
+      zeroImm <= 0;
+      extendType <= 0;
+      bneSelect <= 0; //Dont care
     end
     10:begin//slti
       RegDst <= 0;
@@ -111,9 +124,22 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       selectRaWire <= 0;
       zeroImm <= 0;
       extendType <= 1;
-      bneSelect <= 0; //Dont Matter
+      bneSelect <= 0; //Dont care
     end
-    11:begin//sltiu
+    11:begin//sltiu TESTAR*********
+      RegDst <= 0;
+      Jump <= 0;
+      Branch <= 0;
+      MemRead <= 0;
+      MemtoReg <= 0;
+      ALUOp <= 3;//Verificar
+      MemWrite <= 0;
+      ALUSrc <= 1;
+      RegWrite <= 1;
+      selectRaWire <= 0;
+      zeroImm <= 0;
+      extendType <= 1;
+      bneSelect <= 0; //Dont care
     end
     12:begin//andi
       RegDst <= 0;
@@ -128,7 +154,7 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       selectRaWire <= 0;
       zeroImm <= 0;
       extendType <= 0;
-      bneSelect <= 0; //Dont Matter
+      bneSelect <= 0; //Dont care
     end
     13:begin//ori
       RegDst <= 0;
@@ -143,7 +169,7 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       selectRaWire <= 0;
       zeroImm <= 0;
       extendType <= 0;
-      bneSelect <= 0; //Dont Matter
+      bneSelect <= 0; //Dont care
     end
     15:begin//lui
       RegDst <= 0;
@@ -158,7 +184,7 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       selectRaWire <= 0;
       zeroImm <= 0;
       extendType <= 1;
-      bneSelect <= 0; //Dont Matter
+      bneSelect <= 0; //Dont care
     end
     35:begin//LW
       RegDst <= 0;
@@ -173,7 +199,7 @@ module Controle(OpCode, RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp, MemWrite
       selectRaWire <= 0;
       zeroImm <= 0;
       extendType <= 1;
-      bneSelect <= 0; //Dont Matter
+      bneSelect <= 0; //Dont care
     end
     36:begin//lbu
     end

@@ -12,7 +12,7 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	MUXReg
 
-} {} {}} ./Deslocador.v {1 {vlog -work work C:/Users/user/Desktop/GIT/DataPathVerilog/Deslocador.v
+} {} {}} ./Deslocador.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathVerilog-master/Deslocador.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module Deslocador
 
@@ -26,7 +26,7 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	PC
 
-} {} {}} ./BancoRegistradores.v {1 {vlog -work work C:/Users/user/Desktop/GIT/DataPathVerilog/BancoRegistradores.v
+} {} {}} ./BancoRegistradores.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathVerilog-master/BancoRegistradores.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module BancoRegistradores
 
@@ -47,7 +47,14 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	MUX21
 
-} {} {}} ./PC.v {1 {vlog -work work C:/Users/user/Desktop/GIT/DataPathVerilog/PC.v
+} {} {}} ./ALUControl.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathVerilog-master/ALUControl.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALUControl
+
+Top level modules:
+	ALUControl
+
+} {} {}} ./PC.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathVerilog-master/PC.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module PC
 
@@ -68,19 +75,12 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	MemoriaDados
 
-} {} {}} ./Somador.v {1 {vlog -work work C:/Users/user/Desktop/GIT/DataPathVerilog/Somador.v
+} {} {}} ./Somador.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathVerilog-master/Somador.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module Somador
 
 Top level modules:
 	Somador
-
-} {} {}} ../DataPathVerilog-master/MUXReg.v {1 {vlog -work work C:/Users/aluno-ccc/Desktop/DataPathVerilog-master/MUXReg.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module MUXReg
-
-Top level modules:
-	MUXReg
 
 } {} {}} C:/Users/eduar/Desktop/DataPathWControl/Controle.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathWControl/Controle.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -89,12 +89,19 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	Controle
 
-} {} {}} C:/Users/eduar/Desktop/DataPathWControl/Deslocador.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathWControl/Deslocador.v
+} {} {}} ../DataPathVerilog-master/MUXReg.v {1 {vlog -work work C:/Users/aluno-ccc/Desktop/DataPathVerilog-master/MUXReg.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module Deslocador
+-- Compiling module MUXReg
 
 Top level modules:
-	Deslocador
+	MUXReg
+
+} {} {}} ./DataPath.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathVerilog-master/DataPath.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DataPath
+
+Top level modules:
+	DataPath
 
 } {} {}} ../DataPathVerilog-master/MemoriaInstrucao.v {1 {vlog -work work C:/Users/aluno-ccc/Desktop/DataPathVerilog-master/MemoriaInstrucao.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -103,7 +110,14 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	MemoriaInstrucao
 
-} {} {}} ./MUXReg.v {1 {vlog -work work C:/Users/user/Desktop/GIT/DataPathVerilog/MUXReg.v
+} {} {}} C:/Users/eduar/Desktop/DataPathWControl/Deslocador.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathWControl/Deslocador.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Deslocador
+
+Top level modules:
+	Deslocador
+
+} {} {}} ./MUXReg.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathVerilog-master/MUXReg.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MUXReg
 
@@ -124,33 +138,19 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	ALU
 
-} {} {}} ./MemoriaInstrucao.v {1 {vlog -work work C:/Users/user/Desktop/GIT/DataPathVerilog/MemoriaInstrucao.v
+} {} {}} ./MemoriaInstrucao.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathVerilog-master/MemoriaInstrucao.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MemoriaInstrucao
 
 Top level modules:
 	MemoriaInstrucao
 
-} {} {}} C:/Users/eduar/Desktop/DataPathWControl/PC.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathWControl/PC.v
+} {} {}} ./ALU.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathVerilog-master/ALU.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module PC
+-- Compiling module ALU
 
 Top level modules:
-	PC
-
-} {} {}} C:/Users/eduar/Desktop/DataPathWControl/ALUControl.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathWControl/ALUControl.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module ALUControl
-
-Top level modules:
-	ALUControl
-
-} {} {}} ../DataPathVerilog-master/MemoriaDados.v {1 {vlog -work work C:/Users/aluno-ccc/Desktop/DataPathVerilog-master/MemoriaDados.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module MemoriaDados
-
-Top level modules:
-	MemoriaDados
+	ALU
 
 } {} {}} ../DataPathVerilog-master/Somador.v {1 {vlog -work work C:/Users/aluno-ccc/Desktop/DataPathVerilog-master/Somador.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -159,6 +159,27 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	Somador
 
+} {} {}} ../DataPathVerilog-master/MemoriaDados.v {1 {vlog -work work C:/Users/aluno-ccc/Desktop/DataPathVerilog-master/MemoriaDados.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MemoriaDados
+
+Top level modules:
+	MemoriaDados
+
+} {} {}} C:/Users/eduar/Desktop/DataPathWControl/ALUControl.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathWControl/ALUControl.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALUControl
+
+Top level modules:
+	ALUControl
+
+} {} {}} C:/Users/eduar/Desktop/DataPathWControl/PC.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathWControl/PC.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module PC
+
+Top level modules:
+	PC
+
 } {} {}} C:/Users/eduar/Desktop/DataPathWControl/MUX21.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathWControl/MUX21.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MUX21
@@ -166,14 +187,14 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	MUX21
 
-} {} {}} ./MUX21.v {1 {vlog -work work C:/Users/user/Desktop/GIT/DataPathVerilog/MUX21.v
+} {} {}} ./MUX21.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathVerilog-master/MUX21.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MUX21
 
 Top level modules:
 	MUX21
 
-} {} {}} ./MemoriaDados.v {1 {vlog -work work C:/Users/user/Desktop/GIT/DataPathVerilog/MemoriaDados.v
+} {} {}} ./MemoriaDados.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathVerilog-master/MemoriaDados.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MemoriaDados
 
@@ -187,12 +208,12 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	Deslocador
 
-} {} {}} C:/Users/eduar/Desktop/DataPathWControl/DataPath.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathWControl/DataPath.v
+} {} {}} ./Controle.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathVerilog-master/Controle.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module DataPath
+-- Compiling module Controle
 
 Top level modules:
-	DataPath
+	Controle
 
 } {} {}} ../DataPathVerilog-master/BancoRegistradores.v {1 {vlog -work work C:/Users/aluno-ccc/Desktop/DataPathVerilog-master/BancoRegistradores.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -200,5 +221,12 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	BancoRegistradores
+
+} {} {}} C:/Users/eduar/Desktop/DataPathWControl/DataPath.v {1 {vlog -work work C:/Users/eduar/Desktop/DataPathWControl/DataPath.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DataPath
+
+Top level modules:
+	DataPath
 
 } {} {}}
