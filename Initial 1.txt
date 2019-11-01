@@ -1,0 +1,75 @@
+initial 
+begin
+  Mem[5'h0] = 32'h22318003;//addi s1 s1 0x8003
+  Mem[5'h1] = 32'h26528800;//addiu s2 s2 0x8800
+  Mem[5'h2] = 32'h02329820;//add s3 s1 s2
+  Mem[5'h3] = 32'h0251a022;//sub s4 s2 s1
+  Mem[5'h4] = 32'h12930001;//beq s4 s3 0x1
+  Mem[5'h5] = 32'h16930001;//bne s4 s3 0x1
+  Mem[5'h6] = 32'h02329824;//and s3 s1 s2
+  Mem[5'h7] = 32'h0232a025;//or s4 s1 s2
+  Mem[5'h8] = 32'h02329827;//nor s3 s1 s2
+  Mem[5'h9] = 32'h08000004;//Jump 0x4
+end
+
+
+
+
+initial 
+begin
+  Mem[5'h0] = 32'h02329824;//and s3 s1 s2
+  Mem[5'h1] = 32'h2a51000f;//slti s1 s2 0xf
+  Mem[5'h2] = 32'h2e51000f;//sltiu s1 s2 0xf
+  Mem[5'h3] = 32'h3251000f;//andi s1 s2 0xf
+  Mem[5'h4] = 32'h3651000f;//ori s1 s2 0xf
+  Mem[5'h5] = 32'h3c1100ff;//lui s1 0xff
+  Mem[5'h6] = 32'hae51000f;//sw s1 0xf(s2)
+  Mem[5'h7] = 32'h8e51000f;//lw s1 0xf(s2)
+  Mem[5'h8] = 32'h0C00000f;//jal 0xf
+end
+
+initial 
+begin
+  Mem[5'h0] = 32'h22318003;//addi s1 s1 0x8003
+  Mem[5'h1] = 32'h26528800;//addiu s2 s2 0x8800
+  Mem[5'h2] = 32'h02329821;//addu s3 s1 s2
+  Mem[5'h3] = 32'h0251a023;//subu s4 s2 s1
+  Mem[5'h4] = 32'h0271a82a;//slt s5 s3 s1
+  Mem[5'h5] = 32'h0271b02b;//sltu s6 s3 s1
+end
+
+Restante:
+addu
+jr
+lbu
+lhu
+ll
+slt
+sltu
+sll
+srl
+sb
+sc
+sh
+subu
+
+
+Implementados, falta verificar o funcionamento das simulações
+addi
+addiu
+sub
+beq
+bne
+and
+or
+nor
+jump
+and
+slti
+sltiu
+andi
+ori
+lui
+sw
+lw
+jal
